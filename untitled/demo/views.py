@@ -62,6 +62,7 @@ def rank(request):
         if user_id == user_info.user_id:
             user_now_dict = user_dict.copy()
         result_list.append(user_dict)
+        num += 1
     # end for user_info in user_db_info:
     if not start and not end:
         result_list.append(user_now_dict)
